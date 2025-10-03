@@ -301,6 +301,7 @@ p {
 
 .hero__line {
   display: block;
+  white-space: nowrap;
 }
 
 .hero__highlight {
@@ -316,8 +317,14 @@ p {
   font-size: 1.05rem;
 }
 
-.hero__tagline-text {
+.hero__tagline-text,
+.hero__brand {
   display: block;
+  white-space: nowrap;
+}
+
+.hero__brand {
+  display: inline-block;
 }
 
 .hero__brand {
@@ -897,6 +904,12 @@ p {
 
   .hero__brand {
     font-size: 1.45rem;
+    white-space: normal;
+  }
+
+  .hero__line,
+  .hero__tagline-text {
+    white-space: normal;
   }
 
   .hero__lead {
