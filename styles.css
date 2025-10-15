@@ -946,19 +946,46 @@ p {
   padding: 0;
   max-width: 880px;
   display: grid;
-  gap: 1rem;
+  gap: clamp(1.15rem, 2vw, 1.7rem);
+  text-align: left;
 }
 
 .future__list li {
+  position: relative;
   background: rgba(9, 46, 96, 0.65);
   border: 1px solid var(--color-border);
   border-radius: 1.15rem;
-  padding: 1.2rem 1.6rem;
+  padding: 1.45rem 1.8rem 1.45rem 3.5rem;
+  font-size: clamp(1.18rem, 2.2vw, 1.45rem);
+  line-height: 1.85;
+  letter-spacing: 0.06em;
+}
+
+.future__list li::before {
+  content: "";
+  position: absolute;
+  left: 1.6rem;
+  top: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 6px rgba(245, 199, 106, 0.15), 0 0 20px rgba(245, 199, 106, 0.4);
+  transform: translateY(-50%);
 }
 
 .mission {
   background: linear-gradient(140deg, rgba(2, 22, 47, 0.9), rgba(5, 44, 90, 0.8));
   text-align: center;
+}
+
+.mission p {
+  margin: 0 auto 1.8rem;
+  max-width: min(90%, 960px);
+  font-size: clamp(1.22rem, 2.6vw, 1.7rem);
+  line-height: 1.9;
+  letter-spacing: 0.055em;
+  color: rgba(243, 247, 255, 0.94);
 }
 
 .consult {
@@ -1301,6 +1328,11 @@ p {
     padding: 0.5rem 1.6rem;
   }
 
+  .mission p {
+    font-size: clamp(1.12rem, 4.2vw, 1.55rem);
+    margin-bottom: 1.6rem;
+  }
+
   .story__callout {
     padding: 1rem 1.6rem;
     font-size: clamp(1.3rem, 5.2vw, 1.65rem);
@@ -1451,8 +1483,18 @@ p {
   }
 
   .future__list li {
-    padding-left: 2rem;
-    padding-right: 1.2rem;
+    padding: 1.2rem 1.2rem 1.2rem 3rem;
+  }
+
+  .future__list li::before {
+    left: 1.35rem;
+    width: 0.55rem;
+    height: 0.55rem;
+    box-shadow: 0 0 0 4px rgba(245, 199, 106, 0.15), 0 0 14px rgba(245, 199, 106, 0.35);
+  }
+
+  .mission p {
+    font-size: clamp(1.08rem, 5vw, 1.45rem);
   }
 
   .flow__list li {
