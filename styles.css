@@ -369,9 +369,9 @@ p {
 
 .hero__portrait {
   position: absolute;
-  top: clamp(4.6rem, 8vw, 6.6rem);
-  right: clamp(1.4rem, 6.4vw, 5.6rem);
-  width: clamp(240px, 26vw, 340px);
+  top: clamp(4.3rem, 7.5vw, 6.2rem);
+  right: clamp(0.8rem, 5.5vw, 4.6rem);
+  width: clamp(280px, 30vw, 420px);
   margin: 0;
   pointer-events: none;
   z-index: 0;
@@ -382,14 +382,18 @@ p {
 .hero__portrait::before {
   content: "";
   position: absolute;
-  inset: clamp(-14%, -9vw, -8%) clamp(-8%, -5.5vw, -2%) clamp(-20%, -14vw, -11%) clamp(-12%, -8vw, -5%);
-  background:
-    radial-gradient(circle at 18% 22%, rgba(79, 182, 255, 0.5), transparent 60%),
-    radial-gradient(circle at 78% 28%, rgba(245, 199, 106, 0.4), transparent 70%),
-    radial-gradient(ellipse at 46% 88%, rgba(6, 22, 52, 0.82), transparent 85%);
-  filter: blur(20px);
-  opacity: 0.62;
+  inset: clamp(-16%, -10vw, -7%) clamp(-7%, -4.5vw, -1.6%) clamp(-19%, -13vw, -9%) clamp(-10%, -7vw, -4%);
+  background: radial-gradient(
+    circle,
+    rgba(58, 122, 196, 0.38) 0%,
+    rgba(26, 58, 106, 0.22) 45%,
+    rgba(8, 20, 40, 0.08) 68%,
+    transparent 88%
+  );
+  filter: blur(24px);
+  opacity: 0.4;
   z-index: -1;
+  pointer-events: none;
 }
 
 .hero__portrait-image {
@@ -398,7 +402,7 @@ p {
   height: auto;
   position: relative;
   border-radius: clamp(1.35rem, 3vw, 2.4rem);
-  filter: drop-shadow(0 24px 44px rgba(4, 16, 38, 0.4));
+  filter: drop-shadow(0 18px 36px rgba(4, 16, 38, 0.34));
 }
 
 .hero__intro {
@@ -1445,9 +1449,9 @@ p {
   }
 
   .hero__portrait {
-    top: clamp(4.6rem, 9vw, 6.4rem);
-    right: clamp(0.8rem, 6vw, 4.2rem);
-    width: clamp(220px, 34vw, 300px);
+    top: clamp(4.2rem, 8.5vw, 6rem);
+    right: clamp(0.4rem, 5.4vw, 3.5rem);
+    width: clamp(260px, 42vw, 360px);
   }
 
   .hero__portrait::before {
