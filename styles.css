@@ -341,7 +341,7 @@ p {
 
 .hero {
   position: relative;
-  padding: 6rem 2rem 7rem;
+  padding: 6rem 2rem clamp(9rem, 11vw, 12rem);
   text-align: center;
   overflow: hidden;
 }
@@ -455,21 +455,19 @@ p {
 .hero__portrait::after {
   content: "";
   position: absolute;
-  left: clamp(-3%, -2vw, -0.4%);
-  right: clamp(-3%, -2vw, -0.4%);
-  bottom: clamp(-10%, -6vw, -2%);
-  height: clamp(48px, 9vw, 120px);
-  border-radius: 999px;
-  background: radial-gradient(
-    ellipse at 50% 50%,
-    rgba(3, 14, 32, 0.4) 0%,
-    rgba(3, 14, 32, 0.22) 52%,
-    rgba(3, 14, 32, 0.05) 78%,
-    rgba(3, 14, 32, 0) 100%
-  );
-  opacity: 0.65;
+  left: clamp(-7%, -4.5vw, -1.6%);
+  right: clamp(-7%, -4.5vw, -1.6%);
+  bottom: clamp(-9%, -6vw, -1.2%);
+  height: clamp(90px, 18vw, 230px);
+  border-radius: clamp(1.6rem, 4vw, 3rem);
+  background:
+    radial-gradient(150% 190% at 50% 10%, rgba(1, 12, 28, 0) 32%, rgba(1, 12, 28, 0.55) 78%, rgba(1, 12, 28, 0.85) 100%),
+    linear-gradient(180deg, rgba(1, 12, 28, 0) 0%, rgba(1, 12, 28, 0.8) 100%);
+  opacity: 0.42;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 1) 100%);
   pointer-events: none;
-  z-index: -1;
+  z-index: 1;
 }
 
 .hero__portrait-image {
