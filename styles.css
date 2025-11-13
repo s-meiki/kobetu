@@ -425,9 +425,9 @@ p {
 
 .hero__portrait {
   position: absolute;
-  top: clamp(4.3rem, 7.5vw, 6.2rem);
-  right: clamp(0.8rem, 5.5vw, 4.6rem);
-  width: clamp(280px, 30vw, 420px);
+  top: clamp(3.4rem, 6.5vw, 5.2rem);
+  right: clamp(-1.2rem, 3vw, 3.6rem);
+  width: clamp(340px, 38vw, 560px);
   margin: 0;
   pointer-events: none;
   z-index: 0;
@@ -438,7 +438,7 @@ p {
 .hero__portrait::before {
   content: "";
   position: absolute;
-  inset: clamp(-16%, -10vw, -7%) clamp(-7%, -4.5vw, -1.6%) clamp(-19%, -13vw, -9%) clamp(-10%, -7vw, -4%);
+  inset: clamp(-18%, -12vw, -8%) clamp(-9%, -6vw, -2.5%) clamp(-22%, -15vw, -11%) clamp(-12%, -8vw, -4.5%);
   background: radial-gradient(
     circle,
     rgba(58, 122, 196, 0.38) 0%,
@@ -455,10 +455,10 @@ p {
 .hero__portrait::after {
   content: "";
   position: absolute;
-  left: clamp(-7%, -4.5vw, -1.6%);
-  right: clamp(-7%, -4.5vw, -1.6%);
-  bottom: clamp(-9%, -6vw, -1.2%);
-  height: clamp(90px, 18vw, 230px);
+  left: clamp(-9%, -5vw, -2%);
+  right: clamp(-10%, -6vw, -2.4%);
+  bottom: clamp(-10%, -7vw, -1.8%);
+  height: clamp(110px, 22vw, 260px);
   border-radius: clamp(1.6rem, 4vw, 3rem);
   background:
     radial-gradient(150% 190% at 50% 10%, rgba(1, 12, 28, 0) 32%, rgba(1, 12, 28, 0.55) 78%, rgba(1, 12, 28, 0.85) 100%),
