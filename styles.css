@@ -425,9 +425,9 @@ p {
 
 .hero__portrait {
   position: absolute;
-  top: clamp(3.4rem, 6.5vw, 5.2rem);
-  right: clamp(-1.2rem, 3vw, 3.6rem);
-  width: clamp(340px, 38vw, 560px);
+  top: clamp(4.2rem, 7vw, 6rem);
+  right: clamp(3.2rem, 6vw, 5.8rem);
+  width: clamp(320px, 32vw, 460px);
   margin: 0;
   pointer-events: none;
   z-index: 0;
@@ -438,7 +438,7 @@ p {
 .hero__portrait::before {
   content: "";
   position: absolute;
-  inset: clamp(-18%, -12vw, -8%) clamp(-9%, -6vw, -2.5%) clamp(-22%, -15vw, -11%) clamp(-12%, -8vw, -4.5%);
+  inset: clamp(-16%, -10vw, -6%) clamp(-8%, -5vw, -2%) clamp(-18%, -12vw, -8%) clamp(-10%, -6vw, -3.5%);
   background: radial-gradient(
     circle,
     rgba(58, 122, 196, 0.38) 0%,
@@ -455,17 +455,17 @@ p {
 .hero__portrait::after {
   content: "";
   position: absolute;
-  left: clamp(-9%, -5vw, -2%);
-  right: clamp(-10%, -6vw, -2.4%);
-  bottom: clamp(-10%, -7vw, -1.8%);
-  height: clamp(110px, 22vw, 260px);
-  border-radius: clamp(1.6rem, 4vw, 3rem);
+  left: clamp(-4%, -2vw, -0.6%);
+  right: clamp(-3%, -1.8vw, -0.4%);
+  bottom: clamp(-4%, -3vw, -0.5%);
+  height: clamp(80px, 14vw, 180px);
+  border-radius: clamp(1.2rem, 3vw, 2.4rem);
   background:
-    radial-gradient(150% 190% at 50% 10%, rgba(1, 12, 28, 0) 32%, rgba(1, 12, 28, 0.55) 78%, rgba(1, 12, 28, 0.85) 100%),
-    linear-gradient(180deg, rgba(1, 12, 28, 0) 0%, rgba(1, 12, 28, 0.8) 100%);
-  opacity: 0.42;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 1) 100%);
-  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 58%, rgba(0, 0, 0, 1) 100%);
+    radial-gradient(140% 180% at 50% 18%, rgba(1, 12, 28, 0) 24%, rgba(1, 12, 28, 0.5) 74%, rgba(1, 12, 28, 0.78) 100%),
+    linear-gradient(180deg, rgba(1, 12, 28, 0) 0%, rgba(1, 12, 28, 0.65) 100%);
+  opacity: 0.38;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 52%, rgba(0, 0, 0, 1) 100%);
+  -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 52%, rgba(0, 0, 0, 1) 100%);
   pointer-events: none;
   z-index: 1;
 }
