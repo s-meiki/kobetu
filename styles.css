@@ -339,6 +339,22 @@ p {
   white-space: nowrap;
 }
 
+.section__caption-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.1rem 0.85rem;
+  margin: 0 0.15rem;
+  border-radius: 999px;
+  background: linear-gradient(120deg, rgba(79, 182, 255, 0.2), rgba(245, 199, 106, 0.35));
+  border: 1px solid rgba(124, 210, 255, 0.35);
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-shadow: 0 6px 18px rgba(245, 199, 106, 0.4);
+  box-shadow: 0 8px 22px rgba(2, 8, 22, 0.45), inset 0 0 18px rgba(15, 42, 78, 0.4);
+}
+
 .hero {
   position: relative;
   padding: 6rem 2rem clamp(9rem, 11vw, 12rem);
