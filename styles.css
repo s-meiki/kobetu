@@ -340,18 +340,28 @@ p {
 }
 
 .section__caption-highlight {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.1rem 0.85rem;
-  margin: 0 0.15rem;
-  border-radius: 999px;
-  background: linear-gradient(120deg, rgba(79, 182, 255, 0.16), rgba(245, 199, 106, 0.3));
+  position: relative;
+  display: inline-block;
+  padding: 0 0.15rem;
   color: var(--color-accent);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-shadow: 0 6px 18px rgba(245, 199, 106, 0.32);
-  box-shadow: 0 8px 22px rgba(2, 8, 22, 0.35), inset 0 0 14px rgba(15, 42, 78, 0.32);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-shadow: 0 6px 18px rgba(245, 199, 106, 0.28);
+  z-index: 0;
+}
+
+.section__caption-highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.1em;
+  height: 0.35em;
+  border-radius: 6px;
+  background: linear-gradient(120deg, rgba(79, 182, 255, 0.32), rgba(245, 199, 106, 0.45));
+  opacity: 0.5;
+  z-index: -1;
+  filter: blur(0.5px);
 }
 
 .hero {
