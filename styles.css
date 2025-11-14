@@ -1056,21 +1056,23 @@ p {
 }
 
 .story__callout {
-  margin: 1.9rem auto 1.6rem;
-  padding: 1.2rem 2.4rem;
+  margin: 1.4rem auto 1.35rem;
+  padding: 0.85rem 1.8rem;
   background: linear-gradient(135deg, rgba(79, 182, 255, 0.22), rgba(12, 66, 125, 0.7));
   border: 1px solid rgba(79, 182, 255, 0.4);
-  border-radius: 1.6rem;
-  font-size: clamp(1.45rem, 2.4vw, 1.85rem);
+  border-radius: 48px;
+  font-size: clamp(1.32rem, 2.1vw, 1.7rem);
   font-weight: 600;
   text-align: center;
   color: #ffffff;
-  box-shadow: 0 18px 34px rgba(0, 18, 42, 0.45);
+  box-shadow: 0 16px 28px rgba(0, 18, 42, 0.4);
   letter-spacing: 0.03em;
+  width: fit-content;
 }
 
 .story__callout-break {
   display: block;
+  margin-top: 0.2rem;
 }
 
 .story__intro {
