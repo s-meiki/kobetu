@@ -334,9 +334,8 @@ p {
   display: block;
 }
 
-.section__caption-line:last-child {
-  display: inline-block;
-  white-space: nowrap;
+.section__caption-line + .section__caption-line {
+  margin-top: 0.35rem;
 }
 
 .section__caption-highlight {
