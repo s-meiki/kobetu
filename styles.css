@@ -1296,6 +1296,7 @@ p {
   line-height: 1.9;
   letter-spacing: 0.055em;
   color: rgba(243, 247, 255, 0.94);
+  text-align: center;
 }
 
 .consult {
