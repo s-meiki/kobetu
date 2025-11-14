@@ -971,15 +971,15 @@ p {
 .voice__head {
   display: grid;
   align-items: center;
-  gap: 1.6rem;
-  grid-template-columns: minmax(0, 160px) 1fr;
+  gap: 1.7rem;
+  grid-template-columns: auto 1fr;
 }
 
 .voice__photo {
   position: relative;
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  border-radius: 1.1rem;
+  width: clamp(150px, 18vw, 220px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   overflow: hidden;
   background: linear-gradient(135deg, rgba(79, 182, 255, 0.25), rgba(12, 48, 98, 0.75));
   border: 1px solid rgba(120, 178, 255, 0.4);
@@ -990,6 +990,7 @@ p {
   font-size: 0.82rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  justify-self: flex-start;
 }
 
 .voice__photo img {
@@ -997,13 +998,6 @@ p {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.voice__photo--placeholder span {
-  text-align: center;
-  font-size: 0.75rem;
-  letter-spacing: 0.22em;
-  opacity: 0.75;
 }
 
 .voice__meta h3 {
@@ -1606,12 +1600,13 @@ p {
   }
 
   .voice__head {
-    grid-template-columns: minmax(0, 140px) 1fr;
+    grid-template-columns: auto 1fr;
     gap: 1.4rem;
   }
 
   .voice__photo {
-    aspect-ratio: 3 / 4.2;
+    width: clamp(140px, 24vw, 200px);
+    aspect-ratio: 1 / 1;
   }
 
 }
@@ -1660,7 +1655,7 @@ p {
   .voice__photo {
     max-width: 180px;
     margin: 0 auto;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
   }
 
   .voice__meta h3 {
