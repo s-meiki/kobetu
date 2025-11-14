@@ -1259,9 +1259,11 @@ p {
   border: 1px solid var(--color-border);
   border-radius: 1.15rem;
   padding: 1.45rem 1.8rem 1.45rem 3.5rem;
-  font-size: clamp(1.18rem, 2.2vw, 1.45rem);
-  line-height: 1.85;
+  font-size: clamp(1.25rem, 2.4vw, 1.58rem);
+  line-height: 1.9;
   letter-spacing: 0.06em;
+  font-weight: 600;
+  color: rgba(243, 249, 255, 0.96);
 }
 
 .future__list li::before {
